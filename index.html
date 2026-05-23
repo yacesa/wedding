@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Apri & Rhini Wedding</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- COVER -->
+<section class="cover" id="cover">
+
+  <video class="cover-video" autoplay muted loop playsinline>
+    <source src="cover-bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="cover-soft"></div>
+
+  <div class="cover-content">
+    <p class="cover-label">The Wedding Of</p>
+
+    <h1>Apri & Rhini</h1>
+
+    <p class="cover-date">Minggu, 22 Juni 2026</p>
+
+    <div class="guest-card">
+      <span>Kepada Yth.</span>
+      <strong id="guestName">Bapak/Ibu/Saudara/i</strong>
+    </div>
+
+    <p class="cover-desc">
+      Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir di acara pernikahan kami.
+    </p>
+
+    <button class="open-btn" onclick="openInvitation()">
+      <i class="fa-solid fa-envelope-open"></i>
+      Buka Undangan
+    </button>
+  </div>
+
+</section>
+
+<!-- AUDIO -->
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+  <i class="fa-solid fa-music"></i>
+</button>
+
+<!-- NAVBAR -->
+<nav class="bottom-nav" id="bottomNav">
+  <a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="#couple"><i class="fa-solid fa-heart"></i><span>Couple</span></a>
+  <a href="#date"><i class="fa-solid fa-calendar"></i><span>Acara</span></a>
+  <a href="#gallery"><i class="fa-solid fa-image"></i><span>Galeri</span></a>
+  <a href="#rsvp"><i class="fa-solid fa-comment"></i><span>RSVP</span></a>
+</nav>
+
+<main id="mainContent">
+
+  <!-- VIDEO BACKGROUND ISI UNDANGAN -->
+  <video class="main-video" autoplay muted loop playsinline>
+    <source src="main-bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="main-overlay"></div>
+
+  <!-- HOME -->
+  <section class="section hero" id="home">
+    <p class="small-title">The Wedding Of</p>
+    <h1 class="main-name">Apri & Rhini</h1>
+    <p class="date-text">Minggu, 22 Juni 2026</p>
+
+    <div class="frame-photo">
+      <img src="couple.jpg" alt="Apri Rhini">
+    </div>
+  </section>
+
+  <!-- SALAM -->
+  <section class="section card-section">
+    <p class="arabic">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
+
+    <p>
+      Atas rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Bapak/Ibu/Saudara/i
+      untuk hadir dan memberikan doa restu pada acara pernikahan kami.
+    </p>
+  </section>
+
+  <!-- COUPLE -->
+  <section class="section" id="couple">
+    <p class="small-title">Bride & Groom</p>
+    <h2 class="section-title">Mempelai</h2>
+
+    <div class="profile-card">
+      <img src="groom.jpg" alt="Apri">
+      <h3>Apri</h3>
+      <p>Putra dari Bapak Nama Ayah & Ibu Nama Ibu</p>
+      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    </div>
+
+    <div class="and">&</div>
+
+    <div class="profile-card">
+      <img src="bride.jpg" alt="Rhini">
+      <h3>Rhini</h3>
+      <p>Putri dari Bapak Nama Ayah & Ibu Nama Ibu</p>
+      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="section quote">
+    <p>
+      “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan
+      dari jenismu sendiri, supaya kamu merasa tenteram kepadanya.”
+    </p>
+    <span>QS. Ar-Rum: 21</span>
+  </section>
+
+  <!-- STORY -->
+  <section class="section" id="story">
+    <p class="small-title">Our Story</p>
+    <h2 class="section-title">Cerita Kami</h2>
+
+    <div class="story-card">
+      <span>2023</span>
+      <h3>Awal Bertemu</h3>
+      <p>Kami dipertemukan dalam suasana sederhana yang akhirnya menjadi awal cerita indah.</p>
+    </div>
+
+    <div class="story-card">
+      <span>2025</span>
+      <h3>Lamaran</h3>
+      <p>Dengan niat baik dan restu keluarga, kami melangkah menuju hubungan yang lebih serius.</p>
+    </div>
+
+    <div class="story-card">
+      <span>2026</span>
+      <h3>Menikah</h3>
+      <p>InsyaAllah kami akan menyempurnakan ikatan ini dalam pernikahan.</p>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section countdown-section" id="date">
+    <p class="small-title">Save The Date</p>
+    <h2 class="section-title">Menuju Hari Bahagia</h2>
+
+    <div class="countdown">
+      <div><strong id="days">00</strong><span>Hari</span></div>
+      <div><strong id="hours">00</strong><span>Jam</span></div>
+      <div><strong id="minutes">00</strong><span>Menit</span></div>
+      <div><strong id="seconds">00</strong><span>Detik</span></div>
+    </div>
+  </section>
+
+  <!-- ACARA -->
+  <section class="section">
+    <div class="event-card">
+      <h3>Akad Nikah</h3>
+      <p><i class="fa-solid fa-calendar"></i> Minggu, 22 Juni 2026</p>
+      <p><i class="fa-solid fa-clock"></i> 09.00 WITA - Selesai</p>
+      <p><i class="fa-solid fa-location-dot"></i> Kediaman Mempelai Wanita</p>
+      <a class="main-btn" href="https://maps.google.com" target="_blank">Lihat Lokasi</a>
+    </div>
+
+    <div class="event-card">
+      <h3>Resepsi</h3>
+      <p><i class="fa-solid fa-calendar"></i> Minggu, 22 Juni 2026</p>
+      <p><i class="fa-solid fa-clock"></i> 11.00 WITA - Selesai</p>
+      <p><i class="fa-solid fa-location-dot"></i> Gedung / Rumah Acara</p>
+      <a class="main-btn" href="https://maps.google.com" target="_blank">Lihat Lokasi</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <p class="small-title">Our Gallery</p>
+    <h2 class="section-title">Momen Bahagia</h2>
+
+    <div class="gallery-grid">
+      <img src="gallery1.jpg">
+      <img src="gallery2.jpg">
+      <img src="gallery3.jpg">
+      <img src="gallery4.jpg">
+    </div>
+  </section>
+
+  <!-- GIFT -->
+  <section class="section gift">
+    <p class="small-title">Wedding Gift</p>
+    <h2 class="section-title">Kirim Hadiah</h2>
+    <p>Doa restu Anda merupakan hadiah terbaik bagi kami.</p>
+
+    <div class="bank-card">
+      <p>Bank BRI</p>
+      <h3 id="rekening">1234567890</h3>
+      <span>a.n Apri</span>
+      <button onclick="copyRekening()">Salin Rekening</button>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section" id="rsvp">
+    <p class="small-title">RSVP</p>
+    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+
+    <form class="rsvp-form" onsubmit="sendRSVP(event)">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+
+      <select id="status" required>
+        <option value="">Pilih Kehadiran</option>
+        <option value="Saya Hadir">Saya Hadir</option>
+        <option value="Belum Bisa Hadir">Belum Bisa Hadir</option>
+      </select>
+
+      <textarea id="ucapan" placeholder="Ucapan dan doa"></textarea>
+
+      <button type="submit">
+        <i class="fa-brands fa-whatsapp"></i>
+        Kirim ke WhatsApp
+      </button>
+    </form>
+  </section>
+
+  <!-- BRAND -->
+  <section class="section brand">
+    <p class="small-title">Powered By</p>
+    <h2>Yacesa - Digital</h2>
+    <p>Jasa pembuatan undangan digital premium, modern & elegan.</p>
+
+    <a href="https://wa.me/6282291316391?text=Halo%20saya%20ingin%20memesan%20undangan%20digital" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      082291316391
+    </a>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
